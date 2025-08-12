@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sign Up - Courier Service</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  /* Reset & base styles */
+  * {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(120deg, #3a8dde, #1d3f72);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+
+  .signup-container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    width: 380px;
+    padding: 40px 30px 50px;
+    text-align: center;
+    position: relative;
+  }
+
+  .icon {
+    font-size: 60px;
+    margin-bottom: 18px;
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  h1 {
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 1.4px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  input::placeholder {
+    color: #999;
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 12px #5db6f0;
+  }
+
+  button {
+    background: #1d7ed8;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 14px 0;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(29,126,216,0.6);
+  }
+
+  button:hover {
+    background: #0f5bb5;
+    box-shadow: 0 6px 18px rgba(15,91,181,0.8);
+  }
+
+  .footer-text {
+    margin-top: 26px;
+    font-size: 15px;
+  }
+  .footer-text a {
+    color: #8ec9ff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer-text a:hover {
+    color: #d1e7ff;
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <div class="signup-container" role="main" aria-label="Signup form">
+    <div class="icon" aria-hidden="true">🚛</div>
+    <h1>Create Account</h1>
+    <form>
+      <input type="text" name="fullname" placeholder="Full Name" required aria-label="Full Name" />
+      <input type="email" name="email" placeholder="Email Address" required aria-label="Email Address" />
+      <input type="password" name="password" placeholder="Password" required aria-label="Password" />
+      <button type="submit">Sign Up</button>
+    </form>
+    <p class="footer-text">
+      Already have an account? <a href="login.html">Log in here</a>
+    </p>
+  </div>
+</body>
+</html>
