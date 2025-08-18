@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Courier Tracker - Home</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body, html {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #3a8dde, #1d3f72);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  nav a:hover { color: #d1e7ff; }
+
+  .hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 28px;
+    max-width: 500px;
+  }
+
+  .track-box {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .track-box input {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .track-box button {
+    background: #1d7ed8;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .track-box button:hover {
+    background: #0f5bb5;
+  }
+
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+  }
+
+  .feature-card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  }
+
+  .feature-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h2>🚛 CourierTracker</h2>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Fast & Secure Courier Tracking</h1>
+    <p>Track your parcels in real-time with our reliable and easy-to-use courier tracking system.</p>
+
+    <div class="track-box">
+      <input type="text" placeholder="Enter Tracking ID" aria-label="Tracking ID" />
+      <button>Track</button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>⚡ Fast Delivery</h3>
+      <p>Get your parcels delivered quickly with optimized routes.</p>
+    </div>
+    <div class="feature-card">
+      <h3>📍 Live Tracking</h3>
+      <p>Track your shipments anytime, anywhere with live updates.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔒 Secure Service</h3>
+      <p>Your parcels are safe with our trusted and secure delivery system.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 CourierTracker. All rights reserved.
+  </footer>
+</body>
+</html>
